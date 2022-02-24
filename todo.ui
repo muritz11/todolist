@@ -94,7 +94,7 @@ color: white;
      <string>Hi, what are we doing today?</string>
     </property>
    </widget>
-   <widget class="QListWidget" name="listWidget">
+   <widget class="QListWidget" name="todo_list">
     <property name="geometry">
      <rect>
       <x>20</x>
