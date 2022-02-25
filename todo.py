@@ -19,7 +19,6 @@ class MAIN(QMainWindow):
     def addTodo(self):
         # first we grab d td item from input
         item = self.todo_input.text()
-        print(item)
 
         # then add it to d listwidget
         self.todo_list.addItem(item)
@@ -28,7 +27,12 @@ class MAIN(QMainWindow):
         self.todo_input.setText("")
 
     def delItem(self):
-        pass
+        # get selected item
+        selected = self.todo_list.currentRow()
+
+        # del selected item
+        # print(selected)
+        self.todo_list.takeItem(selected)
 
     def clr_all(self):
         self.todo_list.clear()
